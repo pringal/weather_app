@@ -1,0 +1,23 @@
+.table-structure{
+    padding: 10%;
+}
+.weather_data {
+    padding: 20px;
+}
+#weather_table th {
+    background-color: #eee;
+    width: 20%;
+}
+#weather_table td {
+    background-color: #f4f4f4;
+}
+div#weather_api_message {
+    padding: 10px;
+    background: #ff000066;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#city_name {
+    margin-bottom: 20px;
+}
