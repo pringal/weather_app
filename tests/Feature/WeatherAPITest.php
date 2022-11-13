@@ -21,7 +21,14 @@ class WeatherAPITest extends TestCase
 
     public function test_weather_api()
     {
-        $response = $this->post('/get_city_weather',['city' => 'Rajkot']);
+        $response = $this->post('/get_city_weather',['city' => 'New York']);
         $response->assertStatus(200);
     }
+
+    public function test_weather_api_store_data()
+    {
+        $response = $this->post('/api/store_return_city_data',['city' => 'New York']);
+        $response->assertStatus(200);
+    }
+
 }
